@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.autoId</groupId>
+    <groupId>com.github.duxvfeng</groupId>
     <artifactId>autoId</artifactId>
     <version>1.0.0</version>
-    <name>jifen</name>
+    <name>id生成器</name>
     <packaging>jar</packaging>
     <description>主键生成器 author:duxvfeng</description>
 
@@ -57,28 +57,6 @@
                 </configuration>
             </plugin>
 
-
-            <plugin>
-             <artifactId>maven-assembly-plugin</artifactId>
-                 <configuration>
-       <!--             <descriptorRefs>
-                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                     </descriptorRefs>-->
-
-                     <descriptors> <!--描述文件路径-->
-                         <descriptor>src/main/package.xml</descriptor>
-                     </descriptors>
-                 </configuration>
-                     <executions>
-                         <execution>
-                             <phase>package</phase>
-                             <goals>
-                                 <goal>single</goal>
-                             </goals>
-                         </execution>
-                     </executions>
-
-             </plugin>
         </plugins>
     </build>
 
